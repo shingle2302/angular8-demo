@@ -22,7 +22,7 @@ export class UserComponent implements OnInit {
       city: '厦门'
     };
     this.showSkills = true;
-    this.skills = ['AngularJS 1.x', 'AngularJS 2.x', 'AngularJS 8.x'];
+    this.skills = ['AngularJS 1.x', 'Angular 2.x', 'Angular 4.x', 'Angular 8.x'];
   }
 
   toggleSkills() {

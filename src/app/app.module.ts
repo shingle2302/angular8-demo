@@ -29,7 +29,10 @@ export const ROUTES: Routes = [
     MembersComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(ROUTES)
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(ROUTES, {enableTracing: true})
   ],
   providers: [
     MemberService
