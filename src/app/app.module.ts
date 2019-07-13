@@ -9,6 +9,8 @@ import {UserComponent} from './user/user.component';
 import {MembersComponent} from './members/members.component';
 import {MemberService} from './members/member.service';
 
+import {AlertModule} from 'ngx-bootstrap';
+import {TabsModule} from 'ngx-bootstrap';
 
 export const ROUTES: Routes = [
   {
@@ -32,7 +34,9 @@ export const ROUTES: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, {enableTracing: true})
+    RouterModule.forRoot(ROUTES, {enableTracing: true}),
+    AlertModule.forRoot(),
+    TabsModule.forRoot(),
   ],
   providers: [
     MemberService
